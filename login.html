@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Top Anime - Romance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+  <section class="header">
+      <nav>
+          <a href="index.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+          <nav class="header__menu mobile-menu">
+            <i class="fa fa-times" click="hideMenu()"></i>
+              <ul>
+              <li class="active"><a href="./index.html">Homepage</a></li>
+                    <li><a href="./index.html">Categories <span class="arrow_carrot-down"></span></a>
+                        <ul class="dropdown">
+                            <li><a href="./shonen.html">Shonen</a></li>
+                            <li><a href="./slice-of-life.html">Slice of Life</a></li>
+                            <li><a href="./fantasy.html">Fantasy</a></li>
+                            <li><a href="./comedy.html">Comedy</a></li>
+                            <li><a href="./romance.html">Romance</a></li>
+                            <li><a href="./login.html">Login</a></li>
+                            <li><a href="./signup.html">Sign up</a></li>
+                        </ul>
+                    </li>
+              <li><a href="./blog.html">Our Blog</a></li>
+              <li><a href="./contacts.html">Contacts</a></li>
+              </ul>
+          </nav>
+          </ul>
+          </div>
+          <div class="header__right">
+              <a href="./login.html"><span class="fa-regular fa-user"></span></a>
+          </div>
+          <i class="fa fa-bars"  click="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+          <h1>The Best Anime of Every Genre</h1>
+          <p>Looking for the best anime per genre? This is your guide to the best anime shows in almost every genre? These popular shows defined <br> their genre to the point where their influence radiates out throughout all of anime today.</p>
+      </div>
+
+ </section>
+ <!-- Login Section Begin -->
+   <section class="login spad">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-6">
+                   <div class="login__form">
+                       <h3>Login</h3>
+                       <form action="#">
+                           <div class="input__item">
+                               <input type="text" placeholder="Email address">
+                               <span class="fa-regular fa-envelope"></span>
+                           </div>
+                           <div class="input__item">
+                               <input type="text" placeholder="Password">
+                               <span class="fa fa-lock"></span>
+                           </div>
+                           <button type="submit" class="site-btn">LOG IN NOW</button>
+                       </form>
+                       <a href="#" class="forget_pass">Forgot Your Password?</a>
+                   </div>
+               </div>
+               <div class="col-lg-6">
+                   <div class="login__register">
+                       <h3>Don’t Have An Account?</h3>
+                       <a href="./signup.html" class="primary-btn">Register Now</a>
+                   </div>
+               </div>
+           </div>
+           <div class="login__social">
+               <div class="row d-flex justify-content-center">
+                   <div class="col-lg-6">
+                       <div class="login__social__links">
+                           <span>or</span>
+                           <ul>
+                               <li><a href="#" class="facebook"><i class="fa-brands fa-facebook"></i> Sign in With
+                               Facebook</a></li>
+                               <li><a href="#" class="google"><i class="fa-brands fa-google"></i> Sign in With Google</a></li>
+                               <li><a href="#" class="twitter"><i class="fa-brands fa-twitter"></i> Sign in With Twitter</a>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   <!-- Login Section End -->
+   <!-- Footer Section Begin -->
+   <footer class="footer">
+       <div class="page-up">
+           <a href="#" id="scrollToTopButton"><span class="fa fa-arrow-up"></span></a>
+       </div>
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-3">
+                   <div class="footer__logo">
+                       <a href="index.html"><img src="images/logo.png"></a>
+                   </div>
+               </div>
+               <div class="col-lg-6">
+                   <div class="footer__nav">
+                       <ul>
+                           <li class="active"><a href="">Homepage</a></li>
+                           <li><a href="./index.html">Categories</a></li>
+                           <li><a href="./blog.html">Our Blog</a></li>
+                           <li><a href="./contacts.html">Contacts</a></li>
+                       </ul>
+                   </div>
+               </div>
+             </div>
+         </div>
+     </footer>
+
+
+   <script>
+
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+           navLinks.style.right= "0";
+       }
+       function hideMenu(){
+           navLinks.style.right= "-200px";
+       }
+
+   </script>
+
+     </body>
+   </html>
